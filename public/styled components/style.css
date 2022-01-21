@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: linear-gradient(to top, #FF9AA1, #FFB189)
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .box-wordpad .really {
+    position: absolute;
+    background: #FD2348;
+    left: 50%;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+main .box-wordpad .really.active {
+    opacity: 1;
+    visibility: visible;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .really button {
+    margin: 5px 5px;
+    background: #FFA06B;
+    width: 120px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .really button:hover {
+    background: #FCA87A;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad {
+    width: 1440px;
+    height: 620px;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.25);
+}
+
+main .box-wordpad .header-wordpad {
+    padding: 30px;
+    background: linear-gradient(to right, #FD1150, #FFA06B);
+    display: flex;
+}
+
+main .box-wordpad .header-wordpad .archive {
+    position: relative;
+}
+
+main .box-wordpad .header-wordpad .archive .modal-archive {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    top: 60px;
+    width: 369px;
+    transition: ease-in-out .3s;
+    height: 197px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(-140deg, #FD2348, #FD7A1F);
+    padding: 20px;
+}
+
+main .box-wordpad .header-wordpad .archive .modal-archive.active {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .header-wordpad .archive .modal-archive>div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .box-wordpad .header-wordpad .archive .modal-archive>div>h4 {
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: ease-in-out .3s;
+    padding: 5px;
+}
+
+main .box-wordpad .header-wordpad .archive .modal-archive>div>h4:hover {
+    background: #ff9f6b86;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .header-wordpad button {
+    margin: 0 5px;
+    background: #FFA06B;
+    width: 142px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .header-wordpad .edit {
+    position: relative;
+}
+
+main .box-wordpad .header-wordpad .edit .modal-archive {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    top: 60px;
+    width: 369px;
+    transition: ease-in-out .3s;
+    height: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(-140deg, #FD2348, #FD7A1F);
+    padding: 20px;
+}
+
+main .box-wordpad .header-wordpad .edit .modal-archive.active {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .header-wordpad .edit .modal-archive>div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .box-wordpad .header-wordpad .edit .modal-archive>div>h4 {
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: ease-in-out .3s;
+    padding: 5px;
+}
+
+main .box-wordpad .header-wordpad .edit .modal-archive>div>h4:hover {
+    background: #ff9f6b86;
+    transition: ease-in-out .3s;
+}
+
+main .box-wordpad .header-wordpad button:hover {
+    background: #FCA87A;
+}
+
+main .box-wordpad .text-area-user {
+    height: 70%;
+}
+
+main .box-wordpad .text-area-user textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+main .box-wordpad .text-area-user textarea.bold {
+    font-weight: bold;
+}
+
+main .box-wordpad .text-area-user textarea.italic {
+    font-style: italic;
+}
+
+main .box-wordpad .number-chars {
+    width: 100%;
+    background: #FFA06B;
+    padding: 30px;
+    text-align: right;
+}
+
+main .box-wordpad .number-chars span {
+    color: #fff;
+}
+
+main .name-file {
+    background-color: #FD1150;
+    border-radius: 5px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+main .name-file.active {
+    transition: ease-in-out .3s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.name-file input {
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+main .name-file button {
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #FFA06B;
+    border-radius: 5px;
+    transition: ease-in-out .3s;
+    outline: none;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+main .name-file button:hover {
+    transition: ease-in-out .3s;
+    background-color: #FFB189;
+}

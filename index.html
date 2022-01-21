@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="public/styled components/style.css">
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Bloco de notas</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="box-wordpad">
+            <div class="header-wordpad">
+                <div class="archive">
+                    <button id="buttonsControls">Arquivo</button>
+                    <div class="modal-archive">
+                        <div class="save">
+                            <h4 id="controls">Novo</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Salvar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit">
+                    <button id="buttonsControls">Editar</button>
+                    <div class="modal-archive">
+                        <div class="save">
+                            <h4 id="controls">Copiar</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Colar</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Desfazer</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Hora/Data</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Deixar em maíusculo</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Deixar em negrito</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Deixar em itálico</h4>
+                        </div>
+                        <div class="save">
+                            <h4 id="controls">Remover formatação</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-area-user">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="number-chars">
+                <span id="chars">Número de caracters: 0</span>
+            </div>
+            <!-- Box Modal Confirmations -->
+            <div class="really">
+                <h2>Deseja salvar o documento?</h2>
+                <button id="button-really">Salvar</button>
+                <button id="button-really">Não salvar</button>
+                <button id="button-really">Cancelar</button>
+            </div>
+        </div>
+        <!-- Name File -->
+        <div class="name-file">
+            <input class="input-name-file" type="text" placeholder="Nome do arquivo">
+            <button class="save-file">Salvar</button>
+            <button class="canceled-button-file">Cancelar</button>
+        </div>
+        </div>
+    </main>
+    <!-- File Save -->
+    <script type="text/javascript" src="public/script/FileSaver.js"></script>
+    <!-- Import Script JavaScript -->
+    <script src="public/script/script.js"></script>
+</body>
+
+</html>
